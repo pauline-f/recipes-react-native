@@ -1,20 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Container, Wrapper, Title, Logo } from './App.styles';
 
 export default App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Vegetarian recipes</Text>
-      
-    </View>
+    <Container>
+      <Wrapper>
+        <Logo source={require('./images/logo.jpg')} />
+        <Title>Vegetarian recipes</Title>
+      </Wrapper>
+    </Container>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
