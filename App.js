@@ -1,13 +1,11 @@
 import React from 'react';
-import { Container, Wrapper, Title, Logo } from './App.styles';
+import { Container } from './App.styles';
+import Header from './components/Header';
 
 export default App = () => {
   return (
     <Container>
-      <Wrapper>
-        <Logo source={require('./images/logo.jpg')} />
-        <Title>Vegetarian recipes</Title>
-      </Wrapper>
+      <Header />
     </Container>
   );
 }
