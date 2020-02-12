@@ -1,7 +1,8 @@
 import React from 'react';
 import {  } from './RecipesList.styles';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import recipes from '../../recipes';
+import RecipeItem from '../RecipeItem';
 
 
 export default Recipeslist = () => {
@@ -10,7 +11,7 @@ export default Recipeslist = () => {
 
   return (
     <View>
-      {recipesList.map(recipe => <Text>{recipe.name}</Text>)}
+      {recipesList.map(recipe => <RecipeItem name={recipe.name} image={recipe.image} />)}
     </View>
   );
 }

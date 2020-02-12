@@ -2,7 +2,7 @@ const recipes = {
   FR: [
     {
       name: "Sauce tomates, haricots rouges",
-      image: "sauce_tomates_haricots_rouges.jpg",
+      image: require('./images/sauce_tomates_haricots_rouges.jpg'),
       ingredients: [
         { name: "oignon", nb: 1 },
         { name: "gousses d'ail", nb: 2 },
@@ -31,7 +31,7 @@ const recipes = {
     },
     {
       name: "Gaufres healthy",
-      image: "gaufres.jpg",
+      image: require('./images/gaufres.jpg'),
       ingredients: [
         { name: "oeufs", nb: 2 },
         { name: "compote de pomme", nb: 30 },
