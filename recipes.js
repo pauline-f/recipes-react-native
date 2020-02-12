@@ -1,6 +1,7 @@
 const recipes = {
   FR: [
     {
+      id: "1",
       name: "Sauce tomates, haricots rouges",
       image: require('./images/sauce_tomates_haricots_rouges.jpg'),
       ingredients: [
@@ -30,6 +31,7 @@ const recipes = {
       ]
     },
     {
+      id: "2",
       name: "Gaufres healthy",
       image: require('./images/gaufres.jpg'),
       ingredients: [
