@@ -11,7 +11,7 @@ export default Recipeslist = () => {
     <FlatList
       data={recipesList}
       renderItem={itemData => (
-        <RecipeItem name={itemData.item.name} image={itemData.item.image} key={itemData.id} />
+        <RecipeItem recipe={itemData.item} key={itemData.item.id} />
       )}>
     </FlatList>
   );
