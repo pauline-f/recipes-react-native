@@ -5,11 +5,9 @@ import RecipePresentation from '../RecipeDetails/RecipeDetails';
 
 export default RecipeItem = ({ recipe }) => {
   return (
-    <TouchableOpacity onPress={() => <RecipePresentation />}>
-      <Wrapper>
-        <Img source={recipe.image} />
-        <Title>{recipe.name}</Title>
-      </Wrapper>
-    </TouchableOpacity>
+    <Wrapper>
+      <Img source={recipe.image} />
+      <Title>{recipe.name}</Title>
+    </Wrapper>
   );
 }

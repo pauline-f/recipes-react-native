@@ -1,18 +1,22 @@
 import React from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, View, TouchableOpacity } from 'react-native';
 import recipes from '../../recipes';
 import RecipeItem from '../RecipeItem';
 
-export default Recipeslist = () => {
+export default Recipeslist = ({ navigateToDetails }) => {
 
   const recipesList = recipes.FR;
 
   return (
-    <FlatList
-      data={recipesList}
-      renderItem={itemData => (
-        <RecipeItem recipe={itemData.item} key={itemData.item.id} />
-      )}>
-    </FlatList>
+    <View>
+      <FlatList
+        data={recipesList}
+        renderItem={itemData => (
+          <TouchableOpacity onPress={navigateToDetails}>
+            <RecipeItem recipe={itemData.item} key={itemData.item.id} />
+          </TouchableOpacity>
+        )}>
+      </FlatList>
+    </View>
   );
 }
