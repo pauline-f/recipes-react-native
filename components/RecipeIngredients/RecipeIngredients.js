@@ -1,6 +1,6 @@
 import React from 'react';
 import { Wrapper, Title, Ingredient } from './RecipeIngredients.styles';
-import { View, FlatList } from 'react-native';
+import { FlatList } from 'react-native';
 
 export default RecipeIngredients = ({ recipe }) => {
   return (

@@ -1,14 +1,16 @@
 import React from 'react';
 import RecipeHeader from '../RecipeHeader';
 import RecipeIngredients from '../RecipeIngredients/RecipeIngredients';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
+import RecipeInstructions from '../RecipeInstructions/RecipeInstructions';
 
 export default RecipeDetails = ({ recipe }) => {
   return (
-    <View>
+    <ScrollView>
       <RecipeHeader recipe={recipe} />
       <RecipeIngredients recipe={recipe} />
-    </View>
-    
+      <RecipeInstructions recipe={recipe} />
+    </ScrollView>
+
   );
 }
