@@ -3,8 +3,8 @@ import RecipesList from '../components/RecipesList/RecipesList';
 
 const RecipesListScreen = props => {
 
-  const navigateToRecipeDetails = () => {
-    props.navigation.navigate('RecipeDetails');
+  const navigateToRecipeDetails = (id) => {
+    props.navigation.navigate('RecipeDetails', {recipeId: id});
   };
 
   return (

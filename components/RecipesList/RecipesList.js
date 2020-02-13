@@ -12,7 +12,7 @@ export default Recipeslist = ({ navigateToDetails }) => {
       <FlatList
         data={recipesList}
         renderItem={itemData => (
-          <TouchableOpacity onPress={navigateToDetails}>
+          <TouchableOpacity onPress={() => navigateToDetails(itemData.item.id)}>
             <RecipeItem recipe={itemData.item} key={itemData.item.id} />
           </TouchableOpacity>
         )}>

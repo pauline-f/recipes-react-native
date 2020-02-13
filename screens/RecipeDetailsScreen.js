@@ -1,10 +1,14 @@
 import React from 'react';
-import { View, Text } from 'react-native'
+import { View, Text } from 'react-native';
+import recipes from '../recipes';
 
-const RecipeDetailsScreen = () => {
+const RecipeDetailsScreen = props => {
+  const recipesList = recipes.FR;
+  const RecId = props.navigation.getParam('recipeId');
+  const selectedRecipe = recipesList.find(recipe => recipe.id === RecId);
   return (
     <View>
-      <Text>Hello Recipe Details</Text>
+      <Text>{selectedRecipe.name}</Text>
     </View>
   )
 };
