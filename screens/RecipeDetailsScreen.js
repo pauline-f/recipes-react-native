@@ -13,4 +13,13 @@ const RecipeDetailsScreen = props => {
   )
 };
 
+RecipeDetailsScreen.navigationOptions = navigationData => {
+  const recipesList = recipes.FR;
+  const RecId = navigationData.navigation.getParam('recipeId');
+  const selectedRecipe = recipesList.find(recipe => recipe.id === RecId);
+  return {
+    headerTitle: selectedRecipe.name
+  };
+}
+
 export default RecipeDetailsScreen;
