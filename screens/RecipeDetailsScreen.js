@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import recipes from '../recipes';
+import RecipeDetails from '../components/RecipeDetails';
 
 const RecipeDetailsScreen = props => {
   const recipesList = recipes.FR;
@@ -8,7 +9,7 @@ const RecipeDetailsScreen = props => {
   const selectedRecipe = recipesList.find(recipe => recipe.id === RecId);
   return (
     <View>
-      <Text>{selectedRecipe.name}</Text>
+      <RecipeDetails recipe={selectedRecipe} />
     </View>
   )
 };

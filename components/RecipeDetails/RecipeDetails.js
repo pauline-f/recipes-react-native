@@ -1,11 +1,8 @@
 import React from 'react';
-import {  } from './RecipeDetails.styles';
-import { View } from 'react-native';
+import RecipeHeader from '../RecipeHeader';
 
-export default RecipeDetails = () => {
+export default RecipeDetails = ({ recipe }) => {
   return (
-    <View>
-
-    </View>
+    <RecipeHeader recipe={recipe} />
   );
 }
