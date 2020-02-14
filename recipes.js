@@ -97,7 +97,8 @@ const recipes = {
     preparationTime: "Temps : ",
     season: "Saison : ",
     ingredients: "Ingrédients",
-    instructions: "Instructions"
+    instructions: "Instructions",
+    add: "Ajouter cette recette"
   }
 };
 
