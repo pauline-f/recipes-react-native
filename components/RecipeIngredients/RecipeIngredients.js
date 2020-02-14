@@ -1,12 +1,13 @@
 import React from 'react';
 import { Wrapper, Title, Ingredient } from './RecipeIngredients.styles';
 import { FlatList } from 'react-native';
-import recipes from '../../recipes';
+import { useSelector } from 'react-redux';
 
 export default RecipeIngredients = ({ recipe }) => {
+  const informations = useSelector(state => state.recipes.informations);
   return (
     <Wrapper>
-      <Title>{recipes.informations.ingredients}</Title>
+      <Title>{informations.ingredients}</Title>
       <FlatList
         data={recipe.ingredients}
         keyExtractor={(item, index) => index.toString()}

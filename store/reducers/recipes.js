@@ -1,7 +1,8 @@
 import recipes from '../../recipes';
 
 const initialState = {
-  recipes: recipes,
+  recipes: recipes.FR.recipes,
+  informations: recipes.FR.informations,
   ingredientsList: []
 };
 

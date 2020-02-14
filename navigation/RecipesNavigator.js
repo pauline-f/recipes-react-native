@@ -8,7 +8,7 @@ const RecipesNavigator = createStackNavigator({
   RecipesList: {
     screen: RecipesListScreen,
     navigationOptions: {
-      headerTitle: recipes.informations.title
+      headerTitle: recipes.FR.informations.title
     }
   },
   RecipeDetails: RecipeDetailsScreen

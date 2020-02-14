@@ -1,11 +1,10 @@
 import React from 'react';
 import { FlatList, View, TouchableOpacity } from 'react-native';
-import recipes from '../../recipes';
+import { useSelector } from 'react-redux';
 import RecipeItem from '../RecipeItem';
 
 export default Recipeslist = ({ navigateToDetails }) => {
-
-  const recipesList = recipes.FR;
+  const recipesList = useSelector(state => state.recipes.recipes);
 
   return (
     <View>

@@ -1,10 +1,11 @@
 import React from 'react';
 import { View } from 'react-native';
-import recipes from '../recipes';
+import { useSelector } from 'react-redux';
 import RecipeDetails from '../components/RecipeDetails';
+import recipes from '../recipes';
 
 const RecipeDetailsScreen = props => {
-  const recipesList = recipes.FR;
+  const recipesList = useSelector(state => state.recipes.recipes);
   const RecId = props.navigation.getParam('recipeId');
   const selectedRecipe = recipesList.find(recipe => recipe.id === RecId);
   return (
@@ -15,7 +16,7 @@ const RecipeDetailsScreen = props => {
 };
 
 RecipeDetailsScreen.navigationOptions = navigationData => {
-  const recipesList = recipes.FR;
+  const recipesList = recipes.FR.recipes;
   const RecId = navigationData.navigation.getParam('recipeId');
   const selectedRecipe = recipesList.find(recipe => recipe.id === RecId);
   return {
