@@ -8,6 +8,7 @@ export default RecipeInstructions = ({ recipe }) => {
       <Title>Instructions</Title>
       <FlatList
         data={recipe.instructions}
+        keyExtractor={(item, index) => index.toString()}
         renderItem={itemData => (
           <Instruction>{itemData.item}</Instruction>
         )}>

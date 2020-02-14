@@ -14,7 +14,6 @@ export const Logo = styled.Image`
 	height: 45px;
 	background: black;
 	border-radius: 22px;
-  border: solid .8px green;
 `;
 
 export const Title = styled.Text`

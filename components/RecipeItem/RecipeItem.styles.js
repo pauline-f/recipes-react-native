@@ -13,7 +13,6 @@ export const Wrapper = styled.View`
 export const Img = styled.Image`
 	width: 80px;
   height: 80px;
-	border: solid;
   border-color: grey;
   border-width: .5px;
   border-radius: 3px;
