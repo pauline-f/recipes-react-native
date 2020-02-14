@@ -6,7 +6,7 @@ const recipes = {
       image: require('./images/sauce_tomates_haricots_rouges.jpg'),
       servings: 6,
       preparationTime: '30min',
-      season: 'all',
+      season: 'Toutes',
       ingredients: [
         { name: "oignon", nb: 1 },
         { name: "gousses d'ail", nb: 2 },
@@ -39,7 +39,7 @@ const recipes = {
       image: require('./images/gaufres.jpg'),
       servings: 3,
       preparationTime: '20min',
-      season: 'all',
+      season: 'Toutes',
       ingredients: [
         { name: "oeufs", nb: 2 },
         { name: "compote de pomme", nb: 30 },
@@ -59,7 +59,7 @@ const recipes = {
       image: require('./images/panais_sauce_tomates_lentilles.jpg'),
       servings: 4,
       preparationTime: '40min',
-      season: 'winter',
+      season: 'Hiver',
       ingredients: [
         { name: "oignon", nb: 1 },
         { name: "gousses d'ail", nb: 2 },
@@ -90,7 +90,15 @@ const recipes = {
         "Ajouter le céleri et la coriandre"
       ]
     },
-  ]
+  ], 
+  informations: {
+    title: "Recettes végétariennes",
+    servings: "Nb de personnes : ",
+    preparationTime: "Temps : ",
+    season: "Saison : ",
+    ingredients: "Ingrédients",
+    instructions: "Instructions"
+  }
 };
 
 export default recipes;
