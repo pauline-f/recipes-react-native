@@ -16,11 +16,9 @@ const RecipeDetailsScreen = props => {
 };
 
 RecipeDetailsScreen.navigationOptions = navigationData => {
-  const recipesList = recipes.FR.recipes;
-  const RecId = navigationData.navigation.getParam('recipeId');
-  const selectedRecipe = recipesList.find(recipe => recipe.id === RecId);
+  const RecipeName = navigationData.navigation.getParam('recipeName');
   return {
-    headerTitle: selectedRecipe.name
+    headerTitle: RecipeName
   };
 }
 
