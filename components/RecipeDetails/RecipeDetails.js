@@ -4,10 +4,10 @@ import RecipeIngredients from '../RecipeIngredients/RecipeIngredients';
 import { ScrollView } from 'react-native';
 import RecipeInstructions from '../RecipeInstructions/RecipeInstructions';
 
-export default RecipeDetails = ({ recipe }) => {
+export default RecipeDetails = ({ recipe, toggleIngredientsListHandler }) => {
   return (
     <ScrollView>
-      <RecipeHeader recipe={recipe} />
+      <RecipeHeader recipe={recipe} toggleIngredientsListHandler={toggleIngredientsListHandler} />
       <RecipeIngredients recipe={recipe} />
       <RecipeInstructions recipe={recipe} />
     </ScrollView>

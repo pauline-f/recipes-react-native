@@ -2,6 +2,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 import RecipesListScreen from '../screens/RecipesListScreen';
 import RecipeDetailsScreen from '../screens/RecipeDetailsScreen';
+import IngredientsListScreen from '../screens/IngredientsListScreen';
 import recipes from '../recipes';
 
 const RecipesNavigator = createStackNavigator({
@@ -11,7 +12,8 @@ const RecipesNavigator = createStackNavigator({
       headerTitle: recipes.FR.informations.title
     }
   },
-  RecipeDetails: RecipeDetailsScreen
+  RecipeDetails: RecipeDetailsScreen,
+  IngredientsList: IngredientsListScreen
 }, {
   defaultNavigationOptions: {
     headerStyle: {

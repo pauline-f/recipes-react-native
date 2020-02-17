@@ -3,7 +3,7 @@ import { Img, WrapperHeaderText, WrapperText, Wrapper, HeaderTitle, HeaderValue 
 import { Button, TouchableOpacity } from 'react-native';
 import { useSelector } from 'react-redux';
 
-export default RecipeHeader = ({ recipe }) => {
+export default RecipeHeader = ({ recipe, toggleIngredientsListHandler }) => {
   const informations = useSelector(state => state.recipes.informations);
   return (
     <Wrapper>
@@ -21,7 +21,7 @@ export default RecipeHeader = ({ recipe }) => {
           <HeaderTitle>{informations.season}</HeaderTitle>
           <HeaderValue>{recipe.season}</HeaderValue>
         </WrapperText>
-        <TouchableOpacity style={{paddingRight: 10}}><Button color='#43a047' title={informations.add} /></TouchableOpacity>
+        <TouchableOpacity style={{paddingRight: 10}}><Button color='#43a047' title={informations.add} onPress={toggleIngredientsListHandler} /></TouchableOpacity>
       </WrapperHeaderText>
     </Wrapper>
   );
