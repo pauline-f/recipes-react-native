@@ -1,8 +1,8 @@
 import React from 'react';
 import { FlatList, View } from 'react-native';
 import { useSelector } from 'react-redux';
-import RecipeItem from '../../RecipesList/RecipeItem';
 import { Message } from './IngredientsList.styles';
+import IngredientsRecipeItem from '../IngredientsRecipeItem/IngredientsRecipeItem';
 
 export default IngredientsList = () => {
   const recipesAdded = useSelector(state => state.recipes.ingredientsList);
@@ -14,7 +14,7 @@ export default IngredientsList = () => {
         <FlatList
           data={recipesAdded}
           renderItem={itemData => (
-            <RecipeItem recipe={itemData.item} key={itemData.item.id} />
+            <IngredientsRecipeItem recipe={itemData.item} key={itemData.item.id} />
           )}>
         </FlatList>
       ) : (

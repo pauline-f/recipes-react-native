@@ -23,7 +23,9 @@ export default RecipeHeader = ({ recipe, toggleIngredientsListHandler, isAdded }
           <HeaderTitle>{informations.season}</HeaderTitle>
           <HeaderValue>{recipe.season}</HeaderValue>
         </WrapperText>
-        <TouchableOpacity style={{paddingRight: 10}}><Button color='#43a047' title={isAdded ? informations.delete : informations.add} onPress={toggleIngredientsListHandler} /></TouchableOpacity>
+        <TouchableOpacity style={{ paddingRight: 10 }}>
+          <Button color='#43a047' title={isAdded ? informations.delete : informations.add} onPress={toggleIngredientsListHandler} />
+        </TouchableOpacity>
       </WrapperHeaderText>
     </Wrapper>
   );
