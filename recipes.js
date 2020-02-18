@@ -94,6 +94,7 @@ const recipes = {
     ],
     informations: {
       title: "Recettes végétariennes",
+      listTitle: "Liste des ingrédients",
       servings: "Nb de personnes : ",
       preparationTime: "Temps : ",
       season: "Saison : ",

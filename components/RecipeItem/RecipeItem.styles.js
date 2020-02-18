@@ -19,6 +19,7 @@ export const Img = styled.Image`
 `;
 
 export const Title = styled.Text`
-	font-size: 20px;
+	font-size: 19px;
+  width: 80%;
   padding-left: 10px;
 `;

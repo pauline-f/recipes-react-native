@@ -13,7 +13,12 @@ const RecipesNavigator = createStackNavigator({
     }
   },
   RecipeDetails: RecipeDetailsScreen,
-  IngredientsList: IngredientsListScreen
+  IngredientsList: {
+    screen: IngredientsListScreen,
+    navigationOptions: {
+      headerTitle: recipes.FR.informations.listTitle
+    }
+  }
 }, {
   defaultNavigationOptions: {
     headerStyle: {
