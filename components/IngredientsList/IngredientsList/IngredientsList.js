@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlatList, View } from 'react-native';
 import { useSelector } from 'react-redux';
-import RecipeItem from '../RecipeItem';
+import RecipeItem from '../../RecipesList/RecipeItem';
 
 export default IngredientsList = () => {
   const recipesAdded = useSelector(state => state.recipes.ingredientsList);

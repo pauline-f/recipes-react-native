@@ -1,5 +1,5 @@
 import React from 'react';
-import RecipesList from '../components/RecipesList/RecipesList';
+import RecipesList from '../components/RecipesList/RecipesList/RecipesList';
 import { Button, View } from 'react-native';
 
 const RecipesListScreen = props => {

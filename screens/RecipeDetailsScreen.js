@@ -1,7 +1,7 @@
 import React, { useEffect, useCallback } from 'react';
 import { View } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
-import RecipeDetails from '../components/RecipeDetails';
+import RecipeDetails from '../components/RecipeDetails/RecipeDetails';
 import { toggleAdd } from '../store/actions/IngredientsList';
 
 const RecipeDetailsScreen = props => {

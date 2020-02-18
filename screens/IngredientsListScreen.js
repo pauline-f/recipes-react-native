@@ -1,5 +1,5 @@
 import React from 'react';
-import IngredientsList from '../components/IngredientsList/IngredientsList';
+import IngredientsList from '../components/IngredientsList/IngredientsList/IngredientsList';
 
 const IngredientsListScreen = () => {
 
