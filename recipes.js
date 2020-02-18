@@ -101,7 +101,8 @@ const recipes = {
       ingredients: "Ingrédients",
       instructions: "Instructions",
       add: "Ajouter",
-      delete: "Supprimer"
+      delete: "Supprimer",
+      messageNoRecipesSelected: "Pas de recettes sélectionnées"
     }
   }
 };
