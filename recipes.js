@@ -99,7 +99,8 @@ const recipes = {
       season: "Saison : ",
       ingredients: "Ingrédients",
       instructions: "Instructions",
-      add: "Ajouter cette recette"
+      add: "Ajouter",
+      delete: "Supprimer"
     }
   }
 };

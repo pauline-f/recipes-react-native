@@ -8,11 +8,9 @@ const initialState = {
 };
 
 const recipesReducer = (state = initialState, action) => {
-  console.log(TOGGLE_ADD);
   switch (action.type) {
     case TOGGLE_ADD: 
       const existingIndex = state.ingredientsList.findIndex(recipe => recipe.id === action.recipeId);
-      console.log(existingIndex);
       if (existingIndex >= 0) {
         const updateIngredientsList = [...state.ingredientsList];
         updateIngredientsList.splice(existingIndex, 1);

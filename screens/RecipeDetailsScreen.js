@@ -9,6 +9,8 @@ const RecipeDetailsScreen = props => {
   const recId = props.navigation.getParam('recipeId');
   const selectedRecipe = recipesList.find(recipe => recipe.id === recId);
 
+  const isAdded = useSelector(state => state.recipes.ingredientsList.some(recipe => recipe.id === recId));
+
   const dispatch = useDispatch();
 
   const toggleIngredientsListHandler = useCallback(() => {
@@ -19,9 +21,13 @@ const RecipeDetailsScreen = props => {
     toggleIngredientsListHandler;
   }, [toggleIngredientsListHandler]);
 
+  useEffect(() => {
+    isAdded;
+  }, [isAdded]);
+
   return (
     <View>
-      <RecipeDetails recipe={selectedRecipe} toggleIngredientsListHandler={toggleIngredientsListHandler} />
+      <RecipeDetails recipe={selectedRecipe} toggleIngredientsListHandler={toggleIngredientsListHandler} isAdded={isAdded} />
     </View>
   )
 };
