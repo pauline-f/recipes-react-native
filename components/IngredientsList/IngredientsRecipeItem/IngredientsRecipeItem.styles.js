@@ -19,7 +19,7 @@ export const Img = styled.ImageBackground`
 `;
 
 export const Title = styled.Text`
-	font-size: 15px;
+	font-size: 17px;
   color: white;
   font-weight: bold;
 `;
@@ -29,12 +29,7 @@ export const WrapperTitleButton = styled.View`
   flex-direction: row;
   align-items: baseline;
   position: relative;
-  top: 90px;
+  top: 100px;
   justify-content: space-between;
   padding: 10px;
-`;
-
-export const WrapperButton = styled.TouchableOpacity`
-  width: 110px;
-  height: 50px;
 `;

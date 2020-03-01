@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, View } from 'react-native';
+import { FlatList, View, ScrollView } from 'react-native';
 import { useSelector } from 'react-redux';
 import { Message } from './IngredientsList.styles';
 import IngredientsRecipeItem from '../IngredientsRecipeItem/IngredientsRecipeItem';
@@ -12,7 +12,7 @@ export default IngredientsList = () => {
   return (
     <View>
       {recipesAdded.length > 0 ? (
-        <View>
+        <ScrollView>
           <FlatList
             data={recipesAdded}
             renderItem={itemData => (
@@ -20,7 +20,7 @@ export default IngredientsList = () => {
             )}>
           </FlatList>
           <Ingredients />
-        </View>
+        </ScrollView>
       ) : (
           <Message>{informations.messageNoRecipesSelected}</Message>
         )}

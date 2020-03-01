@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, Img, Title, WrapperTitleButton, WrapperButton } from './IngredientsRecipeItem.styles';
+import { Wrapper, Img, Title, WrapperTitleButton } from './IngredientsRecipeItem.styles';
 import { Button } from 'react-native';
 import { useSelector } from 'react-redux';
 
@@ -11,9 +11,6 @@ export default IngredientsRecipeItem = ({ recipe }) => {
       <Img source={recipe.image} >
         <WrapperTitleButton>
           <Title>{recipe.name}</Title>
-          <WrapperButton>
-            <Button title={informations.delete} color='#00701a' />
-          </WrapperButton>
         </WrapperTitleButton>
       </Img>
     </Wrapper>

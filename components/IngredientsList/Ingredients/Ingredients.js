@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { FlatList, Text } from 'react-native';
+import { FlatList, View } from 'react-native';
 import { useSelector } from 'react-redux';
-import { ScrollView } from 'react-native';
 import { Title, Ingredient } from './Ingredients.styles';
 
 export default Ingredients = () => {
@@ -21,7 +20,7 @@ export default Ingredients = () => {
   }, [recipesAdded]);
 
   return (
-    <ScrollView>
+    <View>
       <Title>{informations.ingredients}</Title>
       <FlatList
         data={ingredients}
@@ -29,6 +28,6 @@ export default Ingredients = () => {
           <Ingredient>{itemData.item}</Ingredient>
         )}>
       </FlatList>
-    </ScrollView>
+    </View>
   );
 }
